@@ -4,7 +4,7 @@ yarn create react-app .
 #Before creating backend create fake google account to test
 EMAIL: djoserjwtoken@gmail.com
 PASSWORD: StrongestPassword1234###
-App password: whckcdjapfghvedk
+App password: whckcdjapfghvedk9 
 
 # after making dummy email go to myaccounts.ggoogle,com>> securty>> 2 steps verification>> doit
 >> comeback and create app password>> other>> webiste>> copy code and paste somewhere
@@ -141,6 +141,9 @@ DJOSER = {
 copy and paste it:
 
 REST_FRAMEWORK = {
+'DEFAULT_PERMISSION_CLASSES':[
+        'rest_framework.permissions.IsAuthenticated'
+    ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
